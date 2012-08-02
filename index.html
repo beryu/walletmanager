@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+<head>
+	<meta charset="UTF-8">
+	<title>Wallet Manager</title>
+	<link rel="stylesheet" href="./css/common.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+<header>
+<h1>Wallet Manager</h1>
+</header>
+<div id="container">
+</div><!-- /#container -->
+<script type="text/javascript" src="./lib/underscore-min.js"></script>
+<script type="text/javascript" src="./lib/backbone-min.js"></script>
+<script type="text/javascript" src="./lib/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/template" id="form_add">
+	<label id="amount">Amount</label>
+	<input id="amount" type="tel">
+	<button id="add" class="add">submit</button>
+</script>
+<script type="text/template" id="line_deal">
+	<li>
+		<span class="category"><%= category %></span>
+		<span class="amount"><%= amount %></span>
+		<span class="user"><%= user %></span>
+	</li>
+</script>
+</body>
+</html>
